@@ -45,7 +45,14 @@ export default class App extends React.Component {
           <div
             style={{ paddingLeft: 35, flex: 1, whiteSpace: "nowrap", width: 0 }}
           >
-            <h1>Mothership Presentation</h1>
+            <h1
+              style={{ cursor: "pointer" }}
+              onClick={(e) => {
+                this.setState({ slide: 1 });
+              }}
+            >
+              Mothership Presentation
+            </h1>
           </div>
 
           <div style={{ flex: 1 }}>
