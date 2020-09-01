@@ -16,17 +16,15 @@ export default class App extends React.Component {
 
   componentDidMount() {
     window.addEventListener("keydown", (event) => {
-      console.log(event.keyCode);
+      // console.log(event.keyCode);
       if (event.keyCode === 37) {
         if (this.state.slide > 1)
           this.setState({ slide: this.state.slide - 1 });
-        console.log("left");
       }
 
       if (event.keyCode === 39) {
         if (this.state.slide < this.state.slideMax)
           this.setState({ slide: this.state.slide + 1 });
-        console.log("right");
       }
     });
   }
